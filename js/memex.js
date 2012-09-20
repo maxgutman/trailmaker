@@ -25,11 +25,10 @@ $(function() {
                 addUserBox.show();
                 return false;
             });
-            // Display trails from other users -- on enter handler
-            username.keydown(function(e) {
-                if (e.keyCode == 13) {
-                    Memex.addTrails(username.val());
-                }
+            // Display trails from other users
+            addUserBox.submit(function(e) {
+                Memex.addTrails(username.val());
+                return false;
             });
 		    // When users click on a link, open it in a new window
 		    $('a.bookmarks').live('click', function() {
