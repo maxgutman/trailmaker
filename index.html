@@ -4,15 +4,63 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/memex.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
 </head>
 <body>
-    <div id="content">
+    
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
         <div class="container">
-            <h1>Memex</h1>
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#"><img src="images/delicious_logo2.png" width="16" height="16" border="0" /> Delicious Trailmaker</a>
         </div>
+      </div>
     </div>
+
+    <div class="container">
+            <form id="login-box" class="form-inline">
+                <input type="text" class="input-small"  id="login" name="username" placeholder="Username">
+                <input type="password" class="input-small" id="password" name="password" placeholder="Password">
+                <button type="submit" class="btn">Sign in</button>
+            </form>
+            <div id="add-user-box">
+                <input type="text" name="username" id="username" placeholder="Add additional users" value="" />
+            </div>
+            <div class="row">
+                <div class="span5">
+                    <h2>Trails</h2>
+                    <div id="trails">
+                	    <ul></ul>
+                    </div>
+                </div>
+                <div class="span5">
+                    <h2>Bookmarks</h2>
+                    <div id="bookmarks">
+                    	<ul></ul>
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="progress progress-striped active" style="display: none">
+                <div class="bar" style="width: 100%;"><p>Loading</p></div> 
+            </div>
+
+    </div> <!-- /container -->
+
 </body>
 <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/jquery.total-storage.js"></script>
+<script type="text/javascript" src="js/bootstrap-collapse.js"></script>
 <script type="text/javascript" src="js/memex.js"></script>
 </html>
