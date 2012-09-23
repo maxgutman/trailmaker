@@ -2,3 +2,47 @@
     margin: 0;
     padding: 0;
 }
+
+html body {
+	background-image:url(../images/linen.png);
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+
+#bookmarks,
+#trails {
+	background-color: #FFFFFF;
+	min-height:300px;
+	border: 1px solid #DFDFDF;
+}
+
+a.bookmarks {
+	margin-left: 10px;
+}
+
+ul.nav-list li {
+	display:block;
+	padding: 5px 10px;
+}
+
+
+ul.nav-list li:hover {
+	background-color: #F5F5F5;
+}
+
+h4 {
+	background: #0082b2; /* Old browsers */
+	background: -moz-linear-gradient(top,  #0082b2 0%, #1ca3d8 56%, #51bfe8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0082b2), color-stop(56%,#1ca3d8), color-stop(100%,#51bfe8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #0082b2 0%,#1ca3d8 56%,#51bfe8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #0082b2 0%,#1ca3d8 56%,#51bfe8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #0082b2 0%,#1ca3d8 56%,#51bfe8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #0082b2 0%,#1ca3d8 56%,#51bfe8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0082b2', endColorstr='#51bfe8',GradientType=0 ); /* IE6-9 */
+}
+
+.favicon {
+	margin-right: 5px;
+}

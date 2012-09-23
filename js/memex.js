@@ -91,7 +91,7 @@ $(function() {
                 var id = 'trail:',
                     cls = login.val() == user ? 'primary list-items nav nav-list' : 'list-items nav nav-list',
                     tags = {},
-                    header = $('<h3 />', {'html': user, 'class': ''}),
+                    header = $('<h4 />', {'html': user, 'class': ''}),
                     target = $('<ul />', {'class': cls})
                         .html(header)
                         .appendTo('#trails');
@@ -128,8 +128,8 @@ $(function() {
         renderBookmarks: function() {
             $('#bookmarks').html('');
             $.each(bookmarks, function(user, data) {
-                var header = $('<h3 />', {'html': user, 'class': ''}),
-                    target = $('<ul />', {'class': 'list-items nav-list'})
+                var header = $('<h4 />', {'html': user, 'class': ''}),
+                    target = $('<ul />', {'class': 'list-items nav-list nav'})
                         .html(header)
                         .appendTo('#bookmarks');
                 var sortedData = Memex.sortData(data);
@@ -145,8 +145,8 @@ $(function() {
                         .data('user', user)
                         .data('id', val.d)
                         .data('tags', val.t);
-
-                    icon.add(link)
+					// Add favicon within the anchor tag
+                    link.prepend(icon)
                         .appendTo($('<li />')
                         .appendTo(target));
                 });
