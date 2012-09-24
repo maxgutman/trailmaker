@@ -46,8 +46,8 @@ Any bugs/quirks we should be aware of:
 - Can't sign out
 
 
-![Mockup](/images/mockup.png "Mockup")
+![Mockup](https://raw.github.com/maxgutman/i290ta/master/images/mockup.png "Mockup")
 
-![Screenshot1](/images/screenshot1.png "Screenshot 1")
+![Screenshot1](https://raw.github.com/maxgutman/i290ta/master/images/screenshot1.png "Screenshot 1")
 
-![Screenshot2](/images/screenshot2.png "Screenshot 2")
+![Screenshot2](https://raw.github.com/maxgutman/i290ta/master/images/screenshot2.png "Screenshot 2")
